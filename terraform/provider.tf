@@ -7,13 +7,6 @@ terraform {
   }
 }
 
-terraform {
-  backend "gcs" {
-    bucket = "react-gke-storage"
-    prefix = "terraform/state"
-  }
-}
-
 provider "google" {
     region = var.region
     zone = var.zone
