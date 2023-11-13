@@ -22,3 +22,15 @@ resource "google_cloud_run_service" "cloud-run-tf" {
 
 }
 
+resource "google_cloud_run_service_iam_policy" "public-access" {
+  service = google_cloud_run_service.cloud-run-tf.name
+  location = google_cloud_run_service.cloud-run-tf.location
+  policy_data = data.google_iam_policy.policy-serv.policy_data
+}
+
+data "google_iam_policy" "policy-serv" {
+  binding {
+    role = "roles/run.invoker"
+    members = [ "allUsers" ]
+  }
+}
