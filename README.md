@@ -4,7 +4,7 @@ Simple way to use terraform with cloudrun
 To get started first create a project on google cloud, you must have a billing account in other to use the resources on google cloud.
 
 creating a service account:
-- on the console, navigate to IAM $ ADMIN click on service account and create using another name you feels like
+- on the console, navigate to IAM $ ADMIN click on service account and create using any  name you feels like
 - click on the service account you just created and navigate to KEYS, click on it and some option will pop out, click on ADD KEYS
 - click also on JSON key. it will download automatically.
   You can take the downloaded json file and copy paste it to your project.
