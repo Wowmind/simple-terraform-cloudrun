@@ -24,6 +24,6 @@ creating a service account:
 
   Create your terraform configuration files.
 
-Then      terraform init
-          terraform plan
+Then      terraform init,
+          terraform plan,
           terraform apply
