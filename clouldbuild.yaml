@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/terra-run-build/github.com/wowmind/simple-terraform-cloudrun:$COMMIT_SHA', '.']
+  args: ['build', '-t', 'gcr.io/ci-cd-pipeline-405011/github.com/wowmind/simple-terraform-cloudrun:91d55389cd480656d692775193588a8b33214448', '.']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/terra-run-build/github.com/wowmind/simple-terraform-cloudrun:$COMMIT_SHA']
+  args: ['push', 'gcr.io/ci-cd-pipeline-405011/github.com/wowmind/simple-terraform-cloudrun:91d55389cd480656d692775193588a8b33214448']
