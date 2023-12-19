@@ -9,7 +9,6 @@ resource "google_compute_network" "network" {
 resource "google_compute_subnetwork" "my_subnet"{
 name           = "subnet-connect"
 ip_cidr_range  = "192.168.1.0/24"
-  network      = google_compute_network.network.self_link
-  region       = var.region
-
+network        = google_compute_network.network.self_link
+region         = var.region
 }
